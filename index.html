@@ -11,11 +11,277 @@
 	</head>
 	<body class="bg-[#181b16]">
 		<div class="max-w-[1000px] mx-auto pb-[40px] pt-[20px] flex flex-col">
-			<div class="pb-5">
+			<div class="pb-4 justify-between flex">
 				<div class="text-white text-3xl font-medium">wavebase</div>
+				<div
+					class="bg-[#25282e] w-[200px] h-[46px] rounded-xl justify-between items-center flex"
+				>
+					<div class="flex">
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							data-music="/music/Terraria Day.mp3"
+							class="size-8 text-[#464c57] global-play-button ml-3"
+						>
+							<path
+								d="M5 4.98963C5 4.01847 5 3.53289 5.20249 3.26522C5.37889 3.03203 5.64852 2.88773 5.9404 2.8703C6.27544 2.8503 6.67946 3.11965 7.48752 3.65835L18.0031 10.6687C18.6708 11.1139 19.0046 11.3364 19.1209 11.6169C19.2227 11.8622 19.2227 12.1378 19.1209 12.3831C19.0046 12.6636 18.6708 12.8862 18.0031 13.3313L7.48752 20.3417C6.67946 20.8804 6.27544 21.1497 5.9404 21.1297C5.64852 21.1123 5.37889 20.968 5.20249 20.7348C5 20.4671 5 19.9815 5 19.0104V4.98963Z"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-9 text-[#464c57] -mt-0.5 global-pause-button hidden ml-3"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+							/>
+						</svg>
+					</div>
+					<input
+						type="range"
+						min="1"
+						max="100"
+						value="50"
+						class="volume-slider bg-[#70c25d] outline-none mr-3"
+					/>
+				</div>
+			</div>
+			<div class="flex space-x-4">
+				<div class="bg-[#25282e] rounded-2xl">
+					<div class="py-5 px-3 flex flex-col">
+						<button
+							type="button"
+							href="#"
+							data-page="playlists-page"
+							class="page-button text-[#70c25d] w-[200px] bg-[#2b4126] duration-150 py-1.5 px-5 rounded-full mb-2 font-semibold"
+						>
+							Playlists
+						</button>
+						<button
+							type="button"
+							href="/playlist.html"
+							data-page="favorites-page"
+							class="page-button text-[#737a8d] hover:text-[#b1bad6] w-[200px] bg-[#30343b] hover:bg-[#3b4149] duration-150 py-1.5 px-5 rounded-full font-semibold"
+						>
+							Favorites
+						</button>
+					</div>
+				</div>
+				<div class="flex flex-col flex-1 space-y-4">
+					<input
+						type="search"
+						placeholder="Search..."
+						class="bg-[#30343b] h-14 rounded-2xl text-[#737a8d] py-4 px-5 text-lg focus:outline focus:ring-[#70c25d] focus:ring-4"
+					/>
+
+					<div class="playlists-page page">
+						<div
+							class="bg-[#25282e] aspect-square rounded-2xl text-white text-2xl font-semibold justify-center flex pt-5"
+						>
+							Welcome to wavebase!
+						</div>
+					</div>
+					<div class="favorites-page page hidden">
+						<div class="bg-[#25282e] rounded-2xl flex mb-4 w-full">
+							<div class="mx-4 my-4 flex">
+								<div
+									class="size-24 rounded-xl bg-[#30343b] mr-3 items-center justify-center flex max-w-[70px] max-h-[70px] overflow-hidden"
+								>
+									<div
+										class="bg-[#30343b] items-center flex rounded-xl"
+									>
+										<img
+											src="/images/green-square-1.png"
+											alt="Terraria icon"
+											class="w-full"
+										/>
+									</div>
+								</div>
+								<div>
+									<div
+										class="text-white font-semibold text-2xl"
+									>
+										Terraria Music - Day
+									</div>
+									<div class="flex">
+										<svg
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											data-music="/music/Terraria Day.mp3"
+											class="size-8 text-[#464c57] play-button play-button-1"
+										>
+											<path
+												d="M5 4.98963C5 4.01847 5 3.53289 5.20249 3.26522C5.37889 3.03203 5.64852 2.88773 5.9404 2.8703C6.27544 2.8503 6.67946 3.11965 7.48752 3.65835L18.0031 10.6687C18.6708 11.1139 19.0046 11.3364 19.1209 11.6169C19.2227 11.8622 19.2227 12.1378 19.1209 12.3831C19.0046 12.6636 18.6708 12.8862 18.0031 13.3313L7.48752 20.3417C6.67946 20.8804 6.27544 21.1497 5.9404 21.1297C5.64852 21.1123 5.37889 20.968 5.20249 20.7348C5 20.4671 5 19.9815 5 19.0104V4.98963Z"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="2.5"
+											stroke="currentColor"
+											class="w-9 text-[#464c57] pause-button-1 hidden"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-[#25282e] rounded-2xl flex mb-4 w-full">
+							<div class="mx-4 my-4 flex">
+								<div
+									class="size-24 rounded-xl bg-[#30343b] mr-3 items-center justify-center flex max-w-[70px] max-h-[70px] overflow-hidden"
+								>
+									<div
+										class="bg-[#30343b] items-center flex rounded-xl"
+									>
+										<img
+											src="/images/green-square-1.png"
+											alt="Terraria icon"
+											class="w-full"
+										/>
+									</div>
+								</div>
+								<div>
+									<div
+										class="text-white font-semibold text-2xl"
+									>
+										Terraria Music - Jungle
+									</div>
+									<div class="flex">
+										<svg
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											data-music="/music/Terraria Jungle.mp3"
+											class="size-8 text-[#464c57] play-button play-button-2"
+										>
+											<path
+												d="M5 4.98963C5 4.01847 5 3.53289 5.20249 3.26522C5.37889 3.03203 5.64852 2.88773 5.9404 2.8703C6.27544 2.8503 6.67946 3.11965 7.48752 3.65835L18.0031 10.6687C18.6708 11.1139 19.0046 11.3364 19.1209 11.6169C19.2227 11.8622 19.2227 12.1378 19.1209 12.3831C19.0046 12.6636 18.6708 12.8862 18.0031 13.3313L7.48752 20.3417C6.67946 20.8804 6.27544 21.1497 5.9404 21.1297C5.64852 21.1123 5.37889 20.968 5.20249 20.7348C5 20.4671 5 19.9815 5 19.0104V4.98963Z"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="2.5"
+											stroke="currentColor"
+											class="w-9 text-[#464c57] pause-button-2 hidden"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-[#25282e] rounded-2xl flex mb-4 w-full">
+							<div class="mx-4 my-4 flex">
+								<div
+									class="size-24 rounded-xl bg-[#30343b] mr-3 items-center justify-center flex max-w-[70px] max-h-[70px] overflow-hidden"
+								>
+									<div
+										class="bg-[#30343b] items-center flex rounded-xl"
+									>
+										<img
+											src="/images/green-square-1.png"
+											alt="Terraria icon"
+											class="w-full"
+										/>
+									</div>
+								</div>
+								<div>
+									<div
+										class="text-white font-semibold text-2xl"
+									>
+										Terraria Music - Underground Desert
+									</div>
+									<div class="flex">
+										<svg
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											data-music="/music/Terraria Underground Desert.mp3"
+											class="size-8 text-[#464c57] play-button play-button-3"
+										>
+											<path
+												d="M5 4.98963C5 4.01847 5 3.53289 5.20249 3.26522C5.37889 3.03203 5.64852 2.88773 5.9404 2.8703C6.27544 2.8503 6.67946 3.11965 7.48752 3.65835L18.0031 10.6687C18.6708 11.1139 19.0046 11.3364 19.1209 11.6169C19.2227 11.8622 19.2227 12.1378 19.1209 12.3831C19.0046 12.6636 18.6708 12.8862 18.0031 13.3313L7.48752 20.3417C6.67946 20.8804 6.27544 21.1497 5.9404 21.1297C5.64852 21.1123 5.37889 20.968 5.20249 20.7348C5 20.4671 5 19.9815 5 19.0104V4.98963Z"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="2.5"
+											stroke="currentColor"
+											class="w-9 text-[#464c57] pause-button-3 hidden"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="M15.75 5.25v13.5m-7.5-13.5v13.5"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div>
+			<!-- <div>
+				<div class="bg-[#25282e] rounded-2xl flex mb-4">
+					<div class="mx-4 my-4 flex">
+						<div
+							class="size-24 rounded-2xl bg-[#30343b] mr-3"
+						></div>
+						<div class="text-white font-semibold text-2xl">
+							Terraria Music - Jungle
+						</div>
+					</div>
+				</div>
+				<div class="bg-[#25282e] rounded-2xl flex mb-4">
+					<div class="mx-4 my-4 flex">
+						<div
+							class="size-24 rounded-2xl bg-[#30343b] mr-3"
+						></div>
+						<div class="text-white font-semibold text-2xl">
+							Terraria Music - Jungle
+						</div>
+					</div>
+				</div>
 				<div class="bg-[#25282e] rounded-2xl flex">
 					<div class="mx-4 my-4 flex">
 						<div
@@ -26,29 +292,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="bg-[#25282e] rounded-2xl">
-					<div class="size-10 rounded-lg bg-[#30343b]">
-						<img
-							src="/images/terraria-icon.png"
-							alt="Terraria tree icon"
-						/>
-					</div>
-					<div class="text-zinc-600 font-medium">
-						Terraria Music - Jungle
-					</div>
-				</div>
-				<div class="bg-[#25282e] rounded-2xl">
-					<div class="size-10 rounded-lg bg-[#30343b]">
-						<img
-							src="/images/terraria-icon.png"
-							alt="Terraria tree icon"
-						/>
-					</div>
-					<div class="text-zinc-600 font-medium">
-						Terraria Music - Jungle
-					</div>
-				</div>
-			</div>
+			</div> -->
 		</div>
+		<script src="/main.js"></script>
 	</body>
 </html>
